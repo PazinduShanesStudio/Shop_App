@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="329.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
+   <children>
+      <Label layoutX="208.0" layoutY="39.0" text="Item Form" textFill="#f1c40f">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="113.0" text="Item ID">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="157.0" text="Item Name">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="204.0" text="Item qty">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="344.0" layoutY="259.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #f1c40f;" text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField layoutX="202.0" layoutY="105.0" prefHeight="32.0" prefWidth="207.0" />
+      <TextField layoutX="203.0" layoutY="151.0" prefHeight="32.0" prefWidth="207.0" />
+      <TextField layoutX="202.0" layoutY="197.0" prefHeight="32.0" prefWidth="207.0" />
+   </children>
+</AnchorPane>
