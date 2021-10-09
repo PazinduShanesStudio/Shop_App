@@ -1,0 +1,26 @@
+package dao;
+
+import dao.custom.impl.CustomerDAOimpl;
+import dao.custom.impl.ItemDAOimpl;
+
+public class DAOFactory {
+    private static DAOFactory daoFactory;
+
+    private DAOFactory(){
+
+    }
+    public static DAOFactory getInstance(){
+        return (daoFactory == null) ? daoFactory = new DAOFactory() : daoFactory;
+    }
+
+    public <T extends SuperDAO> T getDAO(DAOType daoType){
+        switch (daoType){
+            case CUSTOMER:
+                return (T) new CustomerDAOimpl();
+            case ITEM:
+                return (T) new ItemDAOimpl();
+            default:
+                return null;
+        }
+    }
+}
